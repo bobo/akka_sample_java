@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.226" errors="1" skipped="0" tests="2" name="se.rty.akka.akka_sample_java.ChatServerTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/amd64"/>
+    <property name="java.vm.version" value="14.1-b02"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/bobo/Projects/akka_sample_java"/>
+    <property name="java.runtime.version" value="1.6.0_15-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/home/bobo/Projects/akka_sample_java"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="/tmp/surefirebooter8434230222688721466.jar"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/../lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/home/bobo/Projects/akka_sample_java/target/test-classes:/home/bobo/Projects/akka_sample_java/target/classes:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-core_2.8.0.Beta1/0.8/akka-core_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/sjson/json/sjson/0.5-SNAPSHOT-2.8.Beta1/sjson-0.5-SNAPSHOT-2.8.Beta1.jar:/home/bobo/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/home/bobo/.m2/repository/jsr166x/jsr166x/1.0/jsr166x-1.0.jar:/home/bobo/.m2/repository/sbinary/sbinary/2.8.0.Beta1-2.8.0.Beta1-0.3.1-SNAPSHOT/sbinary-2.8.0.Beta1-2.8.0.Beta1-0.3.1-SNAPSHOT.jar:/home/bobo/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.2.1/jackson-core-asl-1.2.1.jar:/home/bobo/.m2/repository/voldemort/store/compress/h2-lzf/1.0/h2-lzf-1.0.jar:/home/bobo/.m2/repository/net/databinder/dispatch-json_2.8.0.Beta1/0.6.6/dispatch-json_2.8.0.Beta1-0.6.6.jar:/home/bobo/.m2/repository/org/scala-lang/scala-library/2.8.0.Beta1/scala-library-2.8.0.Beta1.jar:/home/bobo/.m2/repository/net/databinder/dispatch-http_2.8.0.Beta1/0.6.6/dispatch-http_2.8.0.Beta1-0.6.6.jar:/home/bobo/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/home/bobo/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/home/bobo/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/bobo/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/home/bobo/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.2.1/jackson-mapper-asl-1.2.1.jar:/home/bobo/.m2/repository/org/jboss/netty/netty/3.2.0.BETA1/netty-3.2.0.BETA1.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-util_2.8.0.Beta1/0.8/akka-util_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/org/codehaus/aspectwerkz/aspectwerkz-jdk5/2.1/aspectwerkz-jdk5-2.1.jar:/home/bobo/.m2/repository/net/lag/configgy/2.8.0.Beta1-1.5-SNAPSHOT/configgy-2.8.0.Beta1-1.5-SNAPSHOT.jar:/home/bobo/.m2/repository/org/codehaus/aspectwerkz/aspectwerkz-nodeps-jdk5/2.1/aspectwerkz-nodeps-jdk5-2.1.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-util-java_2.8.0.Beta1/0.8/akka-util-java_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/google/protobuf/protobuf-java/2.2.0/protobuf-java-2.2.0.jar:/home/bobo/.m2/repository/org/guiceyfruit/guice-core/2.0-beta-4/guice-core-2.0-beta-4.jar:/home/bobo/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar:/home/bobo/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/home/bobo/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/bobo/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/bobo/.m2/repository/org/multiverse/multiverse-alpha/0.4/multiverse-alpha-0.4.jar:/home/bobo/.m2/repository/org/multiverse/multiverse-core/0.4/multiverse-core-0.4.jar:/home/bobo/.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar:/home/bobo/.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar:/home/bobo/.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar:/home/bobo/.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-persistence-redis_2.8.0.Beta1/0.8/akka-persistence-redis_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/redis/redisclient/2.8.0.Beta1-1.3-SNAPSHOT/redisclient-2.8.0.Beta1-1.3-SNAPSHOT.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-persistence-common_2.8.0.Beta1/0.8/akka-persistence-common_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/facebook/thrift/1.0/thrift-1.0.jar:/home/bobo/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/bobo/.m2/repository/junit/junit/4.4/junit-4.4.jar:/home/bobo/.m2/repository/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"/>
+    <property name="os.version" value="2.6.31-20-generic"/>
+    <property name="user.home" value="/home/bobo"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="bobo"/>
+    <property name="java.class.path" value="/home/bobo/Projects/akka_sample_java/target/test-classes:/home/bobo/Projects/akka_sample_java/target/classes:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-core_2.8.0.Beta1/0.8/akka-core_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/sjson/json/sjson/0.5-SNAPSHOT-2.8.Beta1/sjson-0.5-SNAPSHOT-2.8.Beta1.jar:/home/bobo/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/home/bobo/.m2/repository/jsr166x/jsr166x/1.0/jsr166x-1.0.jar:/home/bobo/.m2/repository/sbinary/sbinary/2.8.0.Beta1-2.8.0.Beta1-0.3.1-SNAPSHOT/sbinary-2.8.0.Beta1-2.8.0.Beta1-0.3.1-SNAPSHOT.jar:/home/bobo/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.2.1/jackson-core-asl-1.2.1.jar:/home/bobo/.m2/repository/voldemort/store/compress/h2-lzf/1.0/h2-lzf-1.0.jar:/home/bobo/.m2/repository/net/databinder/dispatch-json_2.8.0.Beta1/0.6.6/dispatch-json_2.8.0.Beta1-0.6.6.jar:/home/bobo/.m2/repository/org/scala-lang/scala-library/2.8.0.Beta1/scala-library-2.8.0.Beta1.jar:/home/bobo/.m2/repository/net/databinder/dispatch-http_2.8.0.Beta1/0.6.6/dispatch-http_2.8.0.Beta1-0.6.6.jar:/home/bobo/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/home/bobo/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/home/bobo/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/bobo/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/home/bobo/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.2.1/jackson-mapper-asl-1.2.1.jar:/home/bobo/.m2/repository/org/jboss/netty/netty/3.2.0.BETA1/netty-3.2.0.BETA1.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-util_2.8.0.Beta1/0.8/akka-util_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/org/codehaus/aspectwerkz/aspectwerkz-jdk5/2.1/aspectwerkz-jdk5-2.1.jar:/home/bobo/.m2/repository/net/lag/configgy/2.8.0.Beta1-1.5-SNAPSHOT/configgy-2.8.0.Beta1-1.5-SNAPSHOT.jar:/home/bobo/.m2/repository/org/codehaus/aspectwerkz/aspectwerkz-nodeps-jdk5/2.1/aspectwerkz-nodeps-jdk5-2.1.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-util-java_2.8.0.Beta1/0.8/akka-util-java_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/google/protobuf/protobuf-java/2.2.0/protobuf-java-2.2.0.jar:/home/bobo/.m2/repository/org/guiceyfruit/guice-core/2.0-beta-4/guice-core-2.0-beta-4.jar:/home/bobo/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar:/home/bobo/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/home/bobo/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/bobo/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/bobo/.m2/repository/org/multiverse/multiverse-alpha/0.4/multiverse-alpha-0.4.jar:/home/bobo/.m2/repository/org/multiverse/multiverse-core/0.4/multiverse-core-0.4.jar:/home/bobo/.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar:/home/bobo/.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar:/home/bobo/.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar:/home/bobo/.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-persistence-redis_2.8.0.Beta1/0.8/akka-persistence-redis_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/redis/redisclient/2.8.0.Beta1-1.3-SNAPSHOT/redisclient-2.8.0.Beta1-1.3-SNAPSHOT.jar:/home/bobo/.m2/repository/se/scalablesolutions/akka/akka-persistence-common_2.8.0.Beta1/0.8/akka-persistence-common_2.8.0.Beta1-0.8.jar:/home/bobo/.m2/repository/com/facebook/thrift/1.0/thrift-1.0.jar:/home/bobo/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/bobo/.m2/repository/junit/junit/4.4/junit-4.4.jar:/home/bobo/.m2/repository/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_15"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.15/jre/classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="/home/bobo/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.194" classname="se.rty.akka.akka_sample_java.ChatServerTest" name="when_on_a_server_and_sending_a_message_it_should_be_stored_in_server">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.entry(LinkedList.java:365)
+	at java.util.LinkedList.get(LinkedList.java:315)
+	at se.rty.akka.akka_sample_java.ChatServerTest.when_on_a_server_and_sending_a_message_it_should_be_stored_in_server(ChatServerTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:59)
+	at org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:98)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:79)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:87)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:77)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:42)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:88)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</error>
+  </testcase>
+  <testcase time="0" classname="se.rty.akka.akka_sample_java.ChatServerTest" name="when_on_a_server_and_someone_else_sends_a_message_it_ends_up_in_my_log"/>
+</testsuite>
